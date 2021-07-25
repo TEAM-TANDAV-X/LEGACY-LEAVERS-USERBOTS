@@ -1,4 +1,4 @@
-# We're using Ubuntu 20.10
+# We're using Legacy 20.10
 FROM vckyouuu/geezprojects:buster
 
 RUN git clone -b Geez-UserBot https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOTS /root/userbot
