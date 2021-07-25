@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/geez.gif" width="35px">GEEZ PROJECTS<img src="./resources/extras/geez.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/extras/geez.gif" width="35px">LEGACY LEAVER<img src="./resources/extras/geez.gif" width="35px"></h1>
 
 <p align="center">
     <a href="https://github.com/vckyou/Geez-UserBot/commits/Geez-UserBot"><img src="https://img.shields.io/github/last-commit/vckyou/Geez-UserBot?color=ff69b4&logo=github&logoColor=ff69b4&style=for-the-badge" /></a>
@@ -28,7 +28,7 @@
 Berbasis [Paperplane](https://github.com/RaphielGang) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot. Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.**
 
 ## DEPLOY TO HEROKU ⚠️
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/vckyou/Geez-UserBot/tree/Geez-UserBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOTS/tree/Geez-Bot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-indigo?style=flat&logo=heroku" width="250" height="38.60" /></a></p>
 
 <h3 align="center">Userbot Digunakan untuk Bersenang-senang di Telegram, dan untuk Menjaga Grup Anda.</h3>
 <p align="center">&nbsp;</p>
