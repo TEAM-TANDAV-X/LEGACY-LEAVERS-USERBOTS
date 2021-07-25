@@ -50,7 +50,7 @@
       "value": "Isi ID Grup Anda, Contoh -1001234567890",
       "required": true
     },
-    "CONSOLE_LOGGER_VERBOSE": {Ui Uu
+    "CONSOLE_LOGGER_VERBOSE": {
       "description": "If you need verbosity on the console logging",
       "value": "False"
     },
