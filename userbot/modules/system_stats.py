@@ -95,7 +95,7 @@ async def psu(event):
     memm += f"`Used      : {get_size(svmem.used)}`\n"
     memm += f"`Percentage: {svmem.percent}%`\n"
     # Bandwidth Usage
-    bw = "**Bandwith Digunakan**\n"
+    bw = "**Bandwidth Used**\n"
     bw += f"`Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
     bw += f"`Download: {get_size(psutil.net_io_counters().bytes_recv)}`\n"
     help_string = f"{str(softw)}\n"
@@ -164,14 +164,14 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Geez-Project⚡ Versi:** \n "
-            f"heads/Geez-Userbot-0-x634i7u1"
+            "**⚜-**⚡ Legacy-Userbot⚡ Versi:** \n "
+            f"heads/Leagcy-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
     else:
         await event.edit(
-            "Sayang sekali anda tidak memiliki git, Anda Menjalankan Bot - 'v1.beta.4'!"
+            "Too bad you don't have git, you're Running a Bot - 'v1.beta.4'!"
         )
 
 
@@ -220,7 +220,7 @@ async def pipcheck(pip):
                 "`\n**Result: **\n`No Result Returned/False`"
             )
     else:
-        await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
+        await pip.edit(" `Type.help pip` To View Examples")
 
 
 @register(outgoing=True, pattern=r"^\.(?:geezalive)\s?(.)?")
@@ -228,9 +228,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"\n__**{GEEZ_TEKS_KUSTOM}**__\n"
+        f"\n__**{LEGACY_TEKS_CUSTOM}**__\n"
         f"**╭───────────────────**\n"
-        f"**├[• 🤴 Geez Owner** \n"
+        f"**├[• 🤴 Legacy Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
         f"**├[• 🔎 Username** \n"
         f"├[•   : `@{user.username}` \n"
@@ -265,16 +265,16 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ ⚡ＧΞ ΞＺ - ＰＲＯＪＥＣＴ⚡**\n"
+        f"**ㅤㅤㅤㅤ ⚡LEGACY - ＰＲＯＪＥＣＴ⚡**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[ＧΞ ΞＺ](t.me/VckyouuBitch)             ㅤ ║\n"
-        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[LEGACY](t.me/LEGACY_LEAVERS_FORCE)             ㅤ ║\n"
+        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Leavers 20.10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
         f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
         f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢-𝙂𝙚𝙚𝙯](https://github.com/vckyou/Geez-UserBot)\n👥 : [ＧΞ ΞＺ-𝗧𝗘𝗔𝗠](t.me/GeezSupportGroup)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/Vckyouuu)\n"
+        f"🔰 : [LEAGCY-𝙂𝙚𝙚𝙯](https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT)\n👥 : [LEGACY-𝗧𝗘𝗔𝗠](t.me/LEGACY_LEAVERS_FORCE)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/TANDAV_X_MAHADEV_BAM_BHOLE)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -311,7 +311,7 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃⚡ＧΞ ΞＺ - ＰＲＯＪＥＣＴ⚡\n"
+        f"┃⚡ LEGACY - ＰＲＯＪＥＣＴ⚡\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
         f" ❍ `Username :` @{user.username} \n"
@@ -321,8 +321,7 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Geez-UserBot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/GeezSupportGroup)  |  "
-        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/vckyouuu)\n"
+        f"┃[REPO](https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/LEGACY_LEAVERS_FORCE)         
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
