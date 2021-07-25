@@ -632,7 +632,7 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            "Mu Inline Bot Mode Off.    
+            "Mode Inline Bot Mu Nonaktif.    
 "To activate it, please go to @BotFather Then
 , Settings Bot > Pilih Mode Inline > Turn On. ")
     try:
