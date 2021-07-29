@@ -201,7 +201,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/626697c5017d3950ecc1c.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/7943d2f35ef910e190d77.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
@@ -458,7 +458,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Legacy - Leaver**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Geez - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
@@ -501,34 +501,34 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Geez-Project"):
+                    "@LEGACY_LEAVERS_FORCE"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=geezlogo,
                     link_preview=False,
-                    text=f"⚡𝙐𝙎𝙀𝙍𝘽𝙊-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : RAM **".format(
+                    text=f"⚡Legacy-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : TONY **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝙐𝙎𝙀𝙍𝘽𝙊-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
-                    text="Daftar Plugins",
+                    "Help From ⚡Legacy-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    text="list Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡𝙐𝙎𝙀𝙍𝘽𝙊-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
-                    text="""**⚡𝙐𝙎𝙀𝙍𝘽𝙊-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n Anda Bisa Membuat Leagcy Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " ⚡Legacy-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    text="""**⚡Legacy-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡\n\n You Can Create Your Own Geez Userbot By:** __Sign Below!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡𝙐𝙎𝙀𝙍𝘽𝙊-𝙎𝙀𝙍𝘽𝙊𝙏⚡",
-                                "https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT"),
+                                "⚡Legacy-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
+                                "https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOTS"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/TANDAV_X_MAHADEV_BAM_BHOLE")]],
+                                "t.me/TONY_LOGIC_EXPERT")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -547,7 +547,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
+                reply_pop_up_alert = f"🚫!WARNING!🚫 Don't Use Own {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -556,7 +556,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Geez-Project
+            if event.query.user_id == uid:  # @LEGACY_LEAVERS_FORCE
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=geezlogo,
@@ -564,7 +564,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/LEGACY_LEAVERS_FORCE"),
+                                       "t.me/@LEGACY_LEAVERS_FORCE"),
                             Button.url("🚨 Group support",
                                        "t.me/LEGACY_LEAVERS_ARMY")],
                         [Button.inline("Open Menu", data="nepo")],
@@ -578,7 +578,7 @@ with bot:
             buttons = [
                 (custom.Button.inline("Open Menu", data="nepo"),),
             ]
-            await event.edit("Menu Ditutup!", buttons=Button.clear())
+            await event.edit("Menu Closed!", buttons=Button.clear())
 
         @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -628,13 +628,13 @@ with bot:
                 )
             else:
                 reply_pop_up_alert = f"🚫!WARNING!🚫 Don't Use Own {DEFAULTUSER}."
+
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot Mu Nonaktif.    
-"To activate it, please go to @BotFather Then
-, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "Mode Inline Bot Mu Nonaktif. "
+            "To activate it, please go to @BotFather Then, Settings Bot > choose Mode Inline > Turn On. ")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:
