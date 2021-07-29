@@ -24,7 +24,7 @@
 
 <h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Geez-UserBot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
 
-**Pada Dasarnya [Geez-UserBot](https://github.com/Vckyou/Geez-UserBot) adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+**Pada Dasarnya [Legacy-UserBot](https://github.com/Vckyou/Geez-UserBot) adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 Berbasis [Paperplane](https://github.com/RaphielGang) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot. Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.**
 
 ## DEPLOY TO HEROKU ⚠️
