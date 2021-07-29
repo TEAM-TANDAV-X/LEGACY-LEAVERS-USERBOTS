@@ -24,5 +24,5 @@ async def yardim(event):
             )
     except Exception:
         return await event.edit(
-            "`You cannot send inline results in this chat ( SendInlineBotResultRequest)`"
+            "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
         )
