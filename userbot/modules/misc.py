@@ -88,7 +88,9 @@ async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
         "\n[⚡ Legacy-Leavers Repo](https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT/blob/Leagcy-UserBot/README.md)"
-       
+        "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
+        "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
+
 
 @register(outgoing=True, pattern="^.repeat (.*)")
 async def repeat(rep):
