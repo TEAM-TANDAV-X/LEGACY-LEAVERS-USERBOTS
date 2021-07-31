@@ -321,7 +321,7 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[REPO](https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/LEGACY_LEAVERS_FORCE)         
+        f"┃[REPO](https://github.com/TEAM-TANDAV-X/LEGACY-LEAVERS-USERBOT)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/LEGACY_LEAVERS_FORCE)  |  "       
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
