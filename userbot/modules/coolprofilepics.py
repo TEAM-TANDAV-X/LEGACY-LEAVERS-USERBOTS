@@ -82,4 +82,4 @@ async def main(event):
 
 CMD_HELP.update({
     "randompp": "\n\n⚡𝘾𝙈𝘿⚡: `.pprandom`"
-    "\n↳ : Mengubah Photo Profile Anda Secara Random."})
+    "\n↳ : Randomly Change Your Profile Photo."})
